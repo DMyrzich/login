@@ -12,7 +12,7 @@ const Login = ({ Token, SetToken }) => {
     function enter() {
 
         SetError("");
-        fetch('https://my-logins.herokuapp.com/api/auth/login', {
+        fetch('http://my-logins.herokuapp.com/api/auth/login', {
             method: "POST",
             body: JSON.stringify({ email, password }),
             headers: { 'Content-Type': 'application/json' },

@@ -9,7 +9,7 @@ const DashBoard = ({ Token, SetToken }) => {
 
     useEffect(() => {
 
-        fetch('https://my-logins.herokuapp.com/api/auth/user', {
+        fetch('http://my-logins.herokuapp.com/api/auth/user', {
             method: "GET",
             headers: {
                 'Authorization': Token

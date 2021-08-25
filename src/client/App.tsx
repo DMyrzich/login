@@ -16,7 +16,7 @@ const App = () => {
             <div>
                 <nav className="blue">
                     <div style={{ margin: 10 }} className="nav-wrapper">
-                        <a href="/" className="brand-logo">Logo</a>
+                        <Link to="/" className="brand-logo">Logo</Link>
                         <ul id="nav-mobile" className="right hide-on-med-and-down">
                             <li><Link to="/registr">Регистрация</Link></li>
                             <li><a href="#2">Мои работы</a></li>

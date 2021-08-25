@@ -10,7 +10,7 @@ const Registr = ({ Token, SetToken }) => {
 
     function enter() {
 
-        fetch('https://my-logins.herokuapp.com/api/auth/register', {
+        fetch('http://my-logins.herokuapp.com/api/auth/register', {
             method: "POST",
             body: JSON.stringify({ name, password, email }),
             headers: {
