@@ -10,7 +10,7 @@ const Registr = ({ Token, SetToken }) => {
 
     function enter() {
 
-        fetch('https://damp-meadow-18066.herokuapp.com/api/auth/register', {
+        fetch('https://my-logins.herokuapp.com/api/auth/register', {
             method: "POST",
             body: JSON.stringify({ name, password, email }),
             headers: {

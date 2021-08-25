@@ -11,7 +11,7 @@ const App = () => {
     const [Token, SetToken] = useState("");
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/login">
 
             <div>
                 <nav className="blue">
@@ -28,7 +28,6 @@ const App = () => {
                 <div style={{ display: 'flex', height: 450, justifyContent: 'center', position: 'relative', top: 35 }}>
 
                     <Switch>
-
                         {
                             Token ? <Link to="/dashboard" component={() => <DashBoard Token={Token} SetToken={SetToken} />} /> : <>
                                 <Route exact path="/registr">
@@ -47,11 +46,8 @@ const App = () => {
                                 </Route>
                             </>
                         }
-
                     </Switch>
-
                 </div>
-
 
                 <footer className="page-footer blue">
                     <div className="container">

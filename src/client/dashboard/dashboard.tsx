@@ -9,7 +9,7 @@ const DashBoard = ({ Token, SetToken }) => {
 
     useEffect(() => {
 
-        fetch('https://damp-meadow-18066.herokuapp.com/api/auth/user', {
+        fetch('https://my-logins.herokuapp.com/api/auth/user', {
             method: "GET",
             headers: {
                 'Authorization': Token
